@@ -6,7 +6,7 @@ RUN apt-get update && \
 
 ARG RCON_WEB_ADMIN_VERSION=0.13.3
 
-ADD https://github.com/brainfoolong/rcon-web-admin/archive/${RCON_WEB_ADMIN_VERSION}.zip /tmp/rcon-web-admin.zip
+ADD https://github.com/lacaulac/rcon-web-admin/archive/${RCON_WEB_ADMIN_VERSION}.zip /tmp/rcon-web-admin.zip
 
 RUN cd /tmp ; unzip /tmp/rcon-web-admin.zip && \
     mv rcon-web-admin-${RCON_WEB_ADMIN_VERSION} /opt/rcon-web-admin && \
